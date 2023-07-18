@@ -146,68 +146,81 @@ ul {
 }
 
 /* <!-- online games section starts --> */
-
-
 .online-games {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 30px 0;
-}
-
-.online-games-img {
+  }
+  
+  .online-games-img {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-
-}
-
-.image-caption {
+  }
+  
+  .image-caption {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-right: 20px;
+    margin-bottom: 20px;
     width: 242px;
     height: 300px;
-
-}
-
-.image-caption img {
+    position: relative;
+  }
+  
+  .image-caption img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.image-caption p {
+    transition: filter 0.3s ease;
+  }
+  
+  .image-caption p {
     margin-top: 5px;
-   
-}
-
-.funny-video {
+  }
+  
+  .funny-video {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 48px;
     font-weight: 700;
-}
-
-.online-games-header {
+  }
+  
+  .online-games-header {
     color: #0B0223;
     text-align: right;
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 10px;
-}
-
-.online-games-description {
+  }
+  
+  .online-games-description {
     color: #534C64;
     text-align: center;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     margin-top: 0;
-    margin-bottom: 10px;
-}
+    margin-bottom: 30px;
+  }
+  
+  /* Hover Effect */
+  .image-caption:hover img {
+    filter: brightness(40%);
+    border: 3px solid rgb(233, 9, 9);
+  }
+  
+  .image-caption:hover::before {
+
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    box-sizing: border-box;
+  }
 
 
 
@@ -227,9 +240,25 @@ ul {
 
     nav,
     .right-section,
-    .banner {
+    .banner,
+    .online-games-img  {
         flex-direction: column;
     }
+    /* online games */
+    .online-games-header,
+  .online-games-description {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .online-games-img {
+    justify-content: center;
+  }
+  
+  .image-caption {
+    margin-right: 0;
+  }
+   
 
 }
 
