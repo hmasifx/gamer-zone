@@ -60,6 +60,10 @@ nav {
   font-size: 14px;
 }
 
+.g
+{
+    color: #F948B2;
+}
 
 /* Banner section */
 .banner {
@@ -138,4 +142,33 @@ ul>li {
   
   ul {
     margin-top: 10px;
+  }
+
+
+
+  /* media section for mobile */
+  @media (max-width: 576px)
+  {
+
+    nav, .right-section,.banner
+    {
+        flex-direction: column;
+    }
+    
+  }
+
+
+
+
+  /* media section for Tablet devices */
+  @media only screen and (min-width: 577px) and (max-width: 1024px)
+  {
+
+
+    nav, .right-section,.banner
+    {
+        flex-direction: column;
+    }
+
+
   }
