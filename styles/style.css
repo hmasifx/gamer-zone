@@ -1,0 +1,50 @@
+* {
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .left-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .frame-icon {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  
+  .right-section {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+  }
+  
+  .right-section li:not(:last-child) {
+    margin-right: 10px;
+  }
+  .right-section li img {
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    
+    
+  }
+  
+  
+  .youtube-part
+  {
+    display: flex;
+   align-items: center;
+    border-radius: 8px;
+background: rgba(11, 2, 35, 0.10);
+
+  }
+  
+  
+  
